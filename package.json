@@ -1,0 +1,40 @@
+{
+  "name": "kivu",
+  "version": "1.0.0",
+  "description": "\"kivu\" for npm",
+  "bin": {
+    "kivu": "index.js"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "index.js": [
+      "prettier-eslint --write",
+      "eslint",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t4y3/kivu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/t4y3/kivu/issues"
+  },
+  "homepage": "https://github.com/t4y3/kivu#readme",
+  "dependencies": {
+    "inquirer": "^6.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "husky": "^2.1.0",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0",
+    "prettier-eslint-cli": "^4.7.1"
+  }
+}
